@@ -68,3 +68,9 @@ Observações Finais:
 O projeto oferece uma boa introdução à programação de jogos simples em Python, combinando lógica de programação e interface gráfica.
 A utilização do algoritmo Minimax representa uma aplicação prática de conceitos de inteligência artificial em jogos.
 
+![image](https://github.com/user-attachments/assets/6c4ffb0e-7002-4bd0-b440-e0bb1eec3244)
+
+![image](https://github.com/user-attachments/assets/eb4ea3ca-3774-43e9-862d-94e3e28072b5)
+
+![image](https://github.com/user-attachments/assets/9e82173b-a169-4a27-8bbc-7675b82c42f2)
+
