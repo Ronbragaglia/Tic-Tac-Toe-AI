@@ -1,76 +1,109 @@
-Descrição do Projeto:
+# 🎮 Tic-Tac-Toe AI — Jogo da Velha com Inteligência Artificial
 
-Este projeto implementa uma versão interativa do Jogo da Velha, onde um jogador humano compete contra uma inteligência artificial (IA). A IA utiliza o algoritmo Minimax para tomar decisões estratégicas e garantir um jogo equilibrado. O jogo é apresentado em uma interface gráfica usando ipywidgets.
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![ipywidgets](https://img.shields.io/badge/ipywidgets-Interactive%20UI-blue?style=for-the-badge)](https://ipywidgets.readthedocs.io/)
+[![Algorithm](https://img.shields.io/badge/Algorithm-Minimax-6366f1?style=for-the-badge)](https://en.wikipedia.org/wiki/Minimax)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-Funcionalidades:
-Interface Gráfica:
+> Jogo da Velha interativo onde você enfrenta uma IA imbatível — implementada com o algoritmo **Minimax**, que avalia cada jogada possível e sempre escolhe a ótima.
 
-Utiliza ipywidgets para criar botões que representam as casas do tabuleiro.
-Exibe o turno atual do jogador e o número de vitórias de cada jogador.
-Mecânica do Jogo:
+---
 
-O jogador humano pode clicar em um botão para fazer sua jogada.
-A IA responde automaticamente após a jogada do jogador.
-Possui um botão de reiniciar o jogo.
-Detecção de Vitória e Empate:
+## ✨ Funcionalidades
 
-O jogo verifica se há um vencedor ou um empate após cada jogada.
-O jogo é reiniciado automaticamente após uma vitória ou empate.
-Contador de Vitórias:
+- 🤖 **IA com Minimax** — nunca perde, sempre joga a melhor jogada possível
+- 🖥️ **Interface gráfica interativa** com ipywidgets (botões clicáveis no Jupyter)
+- 📊 **Contador de vitórias** — placar atualizado automaticamente
+- 🔄 **Botão de reiniciar** — nova partida sem recarregar o notebook
+- ⚡ Detecção automática de vitória, derrota e empate
 
-Mantém um registro do número de vitórias de cada jogador.
+---
 
+## 📸 Screenshots
 
-Tecnologias Utilizadas:
-ipywidgets: Para criar uma interface gráfica interativa.
+![Tabuleiro em jogo](https://github.com/user-attachments/assets/6c4ffb0e-7002-4bd0-b440-e0bb1eec3244)
 
-NumPy: Para facilitar operações de matriz, embora não seja essencial neste caso específico.
+![Vitória](https://github.com/user-attachments/assets/eb4ea3ca-3774-43e9-862d-94e3e28072b5)
 
-random: Importado, mas não utilizado diretamente; pode ser removido.
+![Empate](https://github.com/user-attachments/assets/9e82173b-a169-4a27-8bbc-7675b82c42f2)
 
-Como o Código Funciona:
-Classe TicTacToeAI:
+---
 
-A classe TicTacToeAI é responsável por gerenciar o estado do jogo, a interface e a lógica da IA.
-O método __init__ inicializa o jogo e define o jogador atual como 'X'.
-Reiniciar o Jogo:
+## 🧠 Como o Minimax Funciona
 
-O método reset_game reinicializa o tabuleiro, define o jogador atual e cria a interface.
-Interface do Usuário:
+```
+Estado atual do tabuleiro
+        ↓
+  IA avalia TODOS os movimentos possíveis
+        ↓
+  Para cada movimento → avalia recursivamente
+        ↓
+  Maximiza pontuação da IA (X)
+  Minimiza pontuação do humano (O)
+        ↓
+  Escolhe o movimento com maior pontuação
+```
 
-O método create_ui constrói a interface com botões para o tabuleiro e rótulos para exibir informações do jogo.
-Movimento do Jogador:
+A IA com Minimax é **matematicamente ótima** — é impossível vencê-la, só empatar.
 
-O método on_button_click é chamado quando um botão do tabuleiro é clicado. Ele atualiza o tabuleiro e verifica se houve vitória ou empate.
-Movimento da IA:
+---
 
-A IA utiliza o método ai_move para fazer sua jogada. O movimento é escolhido com base no algoritmo Minimax, que avalia todos os possíveis movimentos e escolhe o melhor.
-Minimax:
+## 🛠️ Tech Stack
 
-O método minimax implementa a lógica de decisão da IA, avaliando o tabuleiro e retornando um valor que representa a qualidade da jogada.
-Verificações de Vitória e Empate:
+| Componente | Tecnologia |
+|-----------|-----------|
+| Interface | ipywidgets |
+| Lógica / IA | Python puro + Minimax |
+| Ambiente | Jupyter Notebook |
+| Aux | NumPy |
 
-Os métodos check_win e check_draw são responsáveis por verificar o estado do jogo após cada jogada.
-Mensagens para o Usuário:
+---
 
-O método display_message exibe mensagens sobre o resultado do jogo e atualiza a interface.
-Resultados:
-O jogo permite que o jogador jogue contra uma IA que sempre busca a melhor jogada possível.
-O contador de vitórias atualiza automaticamente com base nos resultados das partidas.
-A interface é clara e interativa, proporcionando uma experiência amigável ao usuário.
+## 🚀 Como Usar
 
-Exemplo de Uso:
-Basta instanciar a classe TicTacToeAI para iniciar o jogo. O jogo será exibido em uma interface interativa, e o usuário poderá jogar clicando nos botões correspondentes.
+### 1. Clone o repositório
+```bash
+git clone https://github.com/Ronbragaglia/Tic-Tac-Toe-AI.git
+cd Tic-Tac-Toe-AI
+```
 
+### 2. Instale as dependências
+```bash
+pip install ipywidgets numpy jupyter
+```
+
+### 3. Abra o notebook
+```bash
+jupyter notebook
+```
+
+### 4. Inicie o jogo
+No notebook, execute a célula com:
+```python
 game = TicTacToeAI()
+```
 
-Observações Finais:
-O projeto oferece uma boa introdução à programação de jogos simples em Python, combinando lógica de programação e interface gráfica.
-A utilização do algoritmo Minimax representa uma aplicação prática de conceitos de inteligência artificial em jogos.
+Clique nos botões do tabuleiro e tente vencer a IA! 🎯
 
-![image](https://github.com/user-attachments/assets/6c4ffb0e-7002-4bd0-b440-e0bb1eec3244)
+---
 
-![image](https://github.com/user-attachments/assets/eb4ea3ca-3774-43e9-862d-94e3e28072b5)
+## 📁 Estrutura
 
-![image](https://github.com/user-attachments/assets/9e82173b-a169-4a27-8bbc-7675b82c42f2)
+```
+Tic-Tac-Toe-AI/
+├── tic_tac_toe_ai.ipynb   # Notebook principal com o jogo
+└── README.md
+```
 
+---
+
+## 🤝 Contribuições
+
+Pull requests são bem-vindos! Sugestões: adicionar alpha-beta pruning, dificuldade ajustável ou interface web.
+
+---
+
+<div align="center">
+  <sub>Feito com 🎮 por <a href="https://github.com/Ronbragaglia">Rone Bragaglia</a> · ML Engineer & Fundador <a href="https://cobrancaauto.com.br">CobrançaAuto</a></sub>
+</div>
