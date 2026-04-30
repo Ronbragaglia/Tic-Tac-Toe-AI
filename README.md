@@ -1,4 +1,4 @@
-# 🎮 Tic-Tac-Toe AI — Jogo da Velha com Inteligência Artificial
+# 🎮 Tic-Tac-Toe AI: Jogo da Velha com Inteligência Artificial
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
@@ -6,16 +6,16 @@
 [![Algorithm](https://img.shields.io/badge/Algorithm-Minimax-6366f1?style=for-the-badge)](https://en.wikipedia.org/wiki/Minimax)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-> Jogo da Velha interativo onde você enfrenta uma IA imbatível — implementada com o algoritmo **Minimax**, que avalia cada jogada possível e sempre escolhe a ótima.
+> Jogo da Velha interativo onde você enfrenta uma IA imbatível: implementada com o algoritmo **Minimax**, que avalia cada jogada possível e sempre escolhe a ótima.
 
 ---
 
 ## ✨ Funcionalidades
 
-- 🤖 **IA com Minimax** — nunca perde, sempre joga a melhor jogada possível
+- 🤖 **IA com Minimax**: nunca perde, sempre joga a melhor jogada possível
 - 🖥️ **Interface gráfica interativa** com ipywidgets (botões clicáveis no Jupyter)
-- 📊 **Contador de vitórias** — placar atualizado automaticamente
-- 🔄 **Botão de reiniciar** — nova partida sem recarregar o notebook
+- 📊 **Contador de vitórias**: placar atualizado automaticamente
+- 🔄 **Botão de reiniciar**: nova partida sem recarregar o notebook
 - ⚡ Detecção automática de vitória, derrota e empate
 
 ---
@@ -45,7 +45,7 @@ Estado atual do tabuleiro
   Escolhe o movimento com maior pontuação
 ```
 
-A IA com Minimax é **matematicamente ótima** — é impossível vencê-la, só empatar.
+A IA com Minimax é **matematicamente ótima**: é impossível vencê-la, só empatar.
 
 ---
 
